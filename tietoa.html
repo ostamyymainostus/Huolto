@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tietoa meistä - AutoFix Oy</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">AutoFix Oy</div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <nav id="nav-menu">
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="yhteystiedot.html">Yhteystiedot</a>
+    <a href="tietoa.html">Tietoa meistä</a>
+  </nav>
+</header>
+
+<section id="tietoa">
+  <h2>Tietoa meistä</h2>
+  <p>AutoFix Oy on luotettava ajoneuvojen huoltoon ja korjaukseen erikoistunut yritys, joka tarjoaa ammattitaitoista palvelua vuodesta 2015 alkaen. Meiltä saat aina laadukkaan ja nopean palvelun, oli kyseessä pieni huolto tai kattava korjaus. Panostamme asiakaskokemukseen ja laatuun – siksi asiakkaamme palaavat kerta toisensa jälkeen.</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 AutoFix Oy</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>
