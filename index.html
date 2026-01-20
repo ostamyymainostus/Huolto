@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoFix Oy</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">AutoFix Oy</div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <nav id="nav-menu">
+    <a href="#etusivu">Etusivu</a>
+    <a href="#palvelut">Palvelut</a>
+    <a href="#yhteystiedot">Yhteystiedot</a>
+    <a href="#tietoa">Tietoa meistä</a>
+  </nav>
+</header>
+
+<section id="etusivu" class="hero">
+  <div class="hero-overlay">
+    <h1>Luotettavaa huoltoa ja korjausta kaikille ajoneuvoille</h1>
+    <p>AutoFix Oy tarjoaa ammattitaitoista huoltoa ja korjausta ajoneuvoillesi – nopeasti ja luotettavasti.</p>
+    <div class="cta-buttons">
+      <a href="#palvelut" class="btn-hero">Palvelut</a>
+      <a href="#yhteystiedot" class="btn-hero">Ota yhteyttä</a>
+    </div>
+  </div>
+</section>
+
+<section id="palvelut">
+  <h2>Palvelut ja hinnasto</h2>
+  <p class="tuntiveloitus">Tuntiveloitus: 59€/h</p>
+  <div class="services-grid">
+    <div class="service-card">Öljynvaihto</div>
+    <div class="service-card">Jarrupalojen vaihto</div>
+    <div class="service-card">Jarrulevyjen vaihto</div>
+    <div class="service-card">Ilmansuodattimen vaihto</div>
+    <div class="service-card">Polttoainesuodattimen vaihto</div>
+    <div class="service-card">Öljynsuodattimen vaihto</div>
+    <div class="service-card">Auton diagnostiikka</div>
+    <div class="service-card">Moottorin tarkastus</div>
+    <div class="service-card">Vaihteiston öljynvaihto</div>
+    <div class="service-card">Akun vaihto</div>
+    <div class="service-card">Sytytystulppien vaihto</div>
+    <div class="service-card">Pakoputkiston tarkastus / korjaus</div>
+    <div class="service-card">Jäähdytysnesteen vaihto</div>
+    <div class="service-card">Raitisilmasuodattimen vaihto</div>
+    <div class="service-card">Iskunvaimentimien tarkastus / vaihto</div>
+    <div class="service-card">Renkaiden vaihto / tasapainotus</div>
+    <div class="service-card">Renkaiden paikkaukset</div>
+    <div class="service-card">Auton sähköjärjestelmien tarkastus</div>
+    <div class="service-card">Valojen korjaus / vaihto</div>
+    <div class="service-card">Kattokorjaukset / korin pienet kolhut</div>
+    <div class="service-card">Ilmastointihuolto</div>
+    <div class="service-card">Käsinpesu ulkopuolelta</div>
+    <div class="service-card">Konepesu</div>
+    <div class="service-card">Sisäsiivous</div>
+    <div class="service-card">Tehopesu sisätilat</div>
+    <div class="service-card">Vahaus ja kiillotus</div>
+  </div>
+</section>
+
+<section id="tietoa">
+  <h2>Tietoa meistä</h2>
+  <p>AutoFix Oy on luotettava ajoneuvojen huoltoon ja korjaukseen erikoistunut yritys, joka tarjoaa ammattitaitoista palvelua vuodesta 2015 alkaen. Meiltä saat aina laadukkaan ja nopean palvelun, oli kyseessä pieni huolto tai kattava korjaus.</p>
+</section>
+
+<section id="yhteystiedot">
+  <h2>Ota yhteyttä</h2>
+  <p>Puhelin: <span class="highlight">+358 41 721 6027</span></p>
+  <p>Sähköposti: <span class="highlight">autofix.mainostus@gmail.com</span></p>
+  <p>Snapchat & Discord: @autofix</p>
+
+  <form action="mailto:autofix.mainostus@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Nimi" placeholder="Nimesi" required>
+    <input type="email" name="Sahkoposti" placeholder="Sähköpostisi" required>
+    <textarea name="Viesti" placeholder="Kirjoita viesti..." rows="5" required></textarea>
+    <button type="submit">Lähetä</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 AutoFix Oy</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>
