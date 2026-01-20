@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yhteystiedot - AutoFix Oy</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">AutoFix Oy</div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <nav id="nav-menu">
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="yhteystiedot.html">Yhteystiedot</a>
+    <a href="tietoa.html">Tietoa meistä</a>
+  </nav>
+</header>
+
+<section id="yhteystiedot">
+  <h2>Ota yhteyttä</h2>
+  <p>Puhelin: <span class="highlight">+358 41 721 6027</span></p>
+  <p>Sähköposti: <span class="highlight">autofix.mainostus@gmail.com</span></p>
+  <p>Snapchat & Discord: @autofix</p>
+
+  <form action="mailto:autofix.mainostus@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Nimi" placeholder="Nimesi" required>
+    <input type="email" name="Sahkoposti" placeholder="Sähköpostisi" required>
+    <textarea name="Viesti" placeholder="Kirjoita viesti..." rows="5" required></textarea>
+    <button type="submit">Lähetä</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 AutoFix Oy</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>
